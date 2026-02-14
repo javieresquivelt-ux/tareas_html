@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Ejemplo de etiqueta fieldset y legend</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Tareas clase 12 Formularios en HTML">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="javieresquivelt@gmail.com">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+    <header>
+        <p><a href="index.html">👈 Volver atrás</a></p>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Formulario estructurado</h1>
+
+        <form action="" method="get">
+
+          <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+              <label for="name">Nombre</label><BR>
+              <input type="text" name="nombre" id="name" maxlength="50" required autofocus placeholder="Nombre">
+            </p>
+            
+            <p>
+              <label for="apellido">Apellidos</label><BR>
+              <input type="text" name="apellidos" id="apellido" maxlength="50" required placeholder="Apellidos">
+            </p>
+
+            <p>
+              <label for="dni">DNI</label><BR>
+              <input type="number" name="dni" id="dni" required placeholder="DNI" min="1000000" max="99999999">
+            </p>
+
+          </fieldset> 
+
+          <fieldset>
+            <legend>Datos de conexión</legend>
+            <p>
+              <label for="user">Nombre de usuario</label><BR>
+              <input type="text" name="usuario" id="user" maxlength="50" required autofocus placeholder="Nombre de usuario">
+            </p>
+
+            <p>
+              <label for="clave">Contraseña</label><BR>
+              <input type="password" name="password" id="clave" maxlength="50" required placeholder="Contraseña">
+            </p>  
+
+            <p>
+              <label for="clave2">Repite la contraseña</label><BR>
+              <input type="password" name="password2" id="clave2" maxlength="50" required placeholder="Confirmar contraseña">
+            </p>  
+
+
+
+          </fieldset>
+            
+          <p>
+            <button>Enviar</button>
+          </p>
+          <p>
+            <input type="reset" value="Limpiar formulario">
+          </p>
+
+        </form>
+
+    </main>
+
+    <hr>
+    <footer>
+        © 2026 - Todos los derechos reservados
+    </footer>
+</body>
+
+</html>

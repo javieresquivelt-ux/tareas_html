@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Rellena tu CV</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Tareas clase 12 Formularios en HTML">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="javieresquivelt@gmail.com">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+    <header>
+        <p><a href="index.html">👈 Volver atrás</a></p>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Rellena tu CV</h1>
+
+        <form action="" method="get">
+
+          <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+              <label for="provincia">Provincia</label><br>
+              <select name="provincia" id="provincia" required autofocus>
+                <option value="">-</option>
+                <option value="S">Santiago</option>
+                <option value="M">Madrid</option>
+                <option value="S">Sevilla</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="dia_nac">Fecha de nacimiento</label><BR>
+
+              <input type="number" id="dia_nac" name="dia_nac" min="1" max="31" placeholder="dd" required> 
+              
+              de
+
+              <select id="mes_nac" name="mes_nac" required>
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+              </select>
+
+              de
+
+              <input type="number" id="anio_nac" name="anio_nac" min="1900" max="2026" placeholder="aaaa" required>
+        
+            </p>
+
+            <p>
+              <label for="temas">Temas de interés</label><br>
+              <select id="temas" name="temas[]" multiple size="6" required>
+                <option value="bd">Administración de bases de datos</option>
+                <option value="ap">Análisis y programación</option>
+                <option value="arq">Arquitectura</option>
+                <option value="calidad">Calidad</option>
+                <option value="erp">ERP, CRM, Business Intelligence</option>
+                <option value="soporte">Soporte y operación</option>
+              </select>
+            </p>
+
+          </fieldset> 
+            
+          <p>
+            <button>Enviar</button>
+          </p>
+          <p>
+            <input type="reset" value="Limpiar formulario">
+          </p>
+
+        </form>
+
+    </main>
+
+    <hr>
+    <footer>
+        © 2026 - Todos los derechos reservados
+    </footer>
+</body>
+
+</html>
