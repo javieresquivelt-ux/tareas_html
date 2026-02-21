@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Contacto | Academia Conquer</title>
+  <meta name="description" content="Contacta a Academia Conquer: datos de contacto, mapa de ubicación y formulario para enviarnos tus consultas.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <header>
+      <figure>
+        <img width="200" height="30" src="img/home/Conquer-Blocks-logo.avif" alt="Academia Conquer">
+      </figure>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quienes_somos.html">Quiénes somos</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a>Contacto</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+      <h1 id="contacto">Contactanos</h1>
+
+      <form action="contacto.html" method="post" enctype="multipart/form-data">
+
+        <p>
+          <label for="nombre">Ingresa tu nombre</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+        </p>
+
+        <p>
+          <label for="usuario">Ingresa tu correo electrónico</label>
+          <input type="email" id="usuario" name="usuario" placeholder="correo@dominio.com">
+        </p>
+
+        <p>
+          <label for="direcc">Ingresa tu dirección</label>
+          <input type="text" id="direcc" name="direcc" required placeholder="Tu dirección completa">
+        </p>
+
+        <p>
+          <label for="texto">¿Cómo podemos ayudarte?</label><br>
+          <textarea id="texto" name="texto" required placeholder="Escribe tu consulta" cols="30" rows="3"></textarea>
+        </p>
+
+        <button type="submit">Enviar mensaje</button>
+        <button type="reset">Limpiar formulario</button>
+
+      </form>
+
+      <section>
+        <h2>Puedes encontrarnos aquí</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.7268312326596!2d-3.6680295241719336!3d40.431113971437284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229003735bf3f%3A0x2d80dd81d86bfbd7!2sConquer%20Finance%20(Formaci%C3%B3n%20en%20inversi%C3%B3n)!5e1!3m2!1ses!2scl!4v1771626331129!5m2!1ses!2scl"
+          width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>
+        <hr>
+        © Conquer Blocks 2026 Todos los derechos reservados - <a href="Aviso_legal.html">Aviso Legal</a>
+      </p>
+    </footer>     
+
+</body>
+
+</html>

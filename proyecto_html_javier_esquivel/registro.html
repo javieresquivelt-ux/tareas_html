@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Registro | Academia Conquer</title>
+  <meta name="description" content="Crea tu cuenta en Academia Conquer para acceder a cursos, recursos y contenidos del blog. Completa el formulario de registro.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <header>
+    <figure>
+      <img width="200" height="30" src="img/home/Conquer-Blocks-logo.avif" alt="Academia Conquer">
+    </figure>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quienes_somos.html">Quiénes somos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a>Registro</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <h1 id="registro">Registrate en la Academia Conquer</h1>
+    <p>Completa el formulario de registro para acceder a nuestros recursos.</p>
+
+    <form action="registro.html" method="post" enctype="multipart/form-data">
+      <p>
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+      </p>
+      <p>
+        <label for="fecha_nacimiento">Fecha Nacimiento</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>      
+      </p>
+      <p>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required placeholder="correo@dominio.com">
+      </p>
+      <p>
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" required placeholder="Calle 123, Ciudad, País">
+      </p>
+      <p>
+        <label for="pagina_web">Página web</label>
+        <input type="url" id="pagina_web" name="pagina_web" required placeholder="https://www.ejemplo.com">
+      </p>
+      <p>
+        <label for="foto">Foto</label>
+        <input type="file" id="foto" name="foto" required>
+      </p>
+      <p>
+        <label for="biografia">Biografía</label><br>
+        <textarea id="biografia" name="biografia" required placeholder="Escribe una breve bio..." minlength="5" maxlength="300"></textarea>
+      </p>
+      <button type="submit">Registrarse</button>
+      <button type="reset">Limpiar formulario</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      <hr>
+      © Conquer Blocks 2026 Todos los derechos reservados - <a href="Aviso_legal.html">Aviso Legal</a>
+    </p>
+  </footer>     
+
+</body>
+
+</html>
